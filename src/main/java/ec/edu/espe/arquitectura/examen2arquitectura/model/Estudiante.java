@@ -4,17 +4,24 @@
  */
 package ec.edu.espe.arquitectura.examen2arquitectura.model;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.util.List;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Data
-@Document(collection = "ejemplo")
-public class Ejemplo {
+@Document(collection = "Estudiante")
+public class Estudiante {
+
     @Id
     private String id;
-    private String codigo;
     private String nombre;
-    private Integer seccion;
-    private String descripcion;
+    private String correo;
+    private String pais;
+    private LocalDateTime fechaCreacion;
+    private LocalDate fechaNacimiento;
+    private String estado;
+    private List<Curso> cursos;
 }

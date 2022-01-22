@@ -4,10 +4,11 @@
  */
 package ec.edu.espe.arquitectura.examen2arquitectura.dao;
 
-import ec.edu.espe.arquitectura.examen2arquitectura.model.Ejemplo;
+import ec.edu.espe.arquitectura.examen2arquitectura.model.Estudiante;
+import java.util.List;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 
-public interface EjemploRepository extends MongoRepository<Ejemplo, String>{
-    
+public interface EstudianteRepository extends MongoRepository<Estudiante, String>{
+    List<Estudiante> findByCorreo(String correo);
 }
