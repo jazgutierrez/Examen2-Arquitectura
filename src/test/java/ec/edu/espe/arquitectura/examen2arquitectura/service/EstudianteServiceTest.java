@@ -57,6 +57,7 @@ public class EstudianteServiceTest {
         estudiante.setId("365w3jnsd7523ssd");
         estudiante.setCorreo("jazz@gamil.com");
         estudiante.setNombre("Jazz");
+        estudiante.setPais("ECU");
 
         estudiantes = new ArrayList<Estudiante>();
 
