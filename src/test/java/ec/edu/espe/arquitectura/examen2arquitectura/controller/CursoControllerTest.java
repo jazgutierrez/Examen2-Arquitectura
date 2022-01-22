@@ -75,8 +75,8 @@ public class CursoControllerTest {
     @Test
     public void testConsultarCursosPorNombre() {
       try {
-            when(cursoService.buscarPorNombre("PROG")).thenReturn(cursos);
-            Assertions.assertEquals(ResponseEntity.ok(cursos), controller.consultarCursosPorNombre("PROG"));
+            when(cursoService.buscarPorNombre("PROGRAMACION")).thenReturn(cursos);
+            Assertions.assertEquals(ResponseEntity.ok(cursos), controller.consultarCursosPorNombre("PROGRAMACION"));
         } catch (Exception e) {
             Logger.getLogger(CursoControllerTest.class.getName()).log(Level.SEVERE, null, e);
         }

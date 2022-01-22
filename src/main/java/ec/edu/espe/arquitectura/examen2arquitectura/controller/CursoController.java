@@ -36,7 +36,7 @@ public class CursoController {
     @GetMapping("nombre/(nombre)")
     public ResponseEntity consultarCursosPorNombre(@PathVariable("nombre") String nombre) {
         try {
-            return ResponseEntity.ok(this.cursoService.buscarPorArea(nombre));
+            return ResponseEntity.ok(this.cursoService.buscarPorNombre(nombre));
         } catch (Exception e) {
             log.info("No se pudo obtener la información por: {}", e.getMessage());
             return ResponseEntity.badRequest().build();
