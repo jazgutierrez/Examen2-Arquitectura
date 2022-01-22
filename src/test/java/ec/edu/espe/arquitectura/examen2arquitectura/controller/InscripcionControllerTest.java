@@ -25,13 +25,7 @@ public class InscripcionControllerTest {
 
     @Test
     public void testInscripcionCurso() {
-        System.out.println("inscripcionCurso");
-        InscripcionRQ incripcionRQ = null;
-        InscripcionController instance = null;
-        ResponseEntity expResult = null;
-        ResponseEntity result = instance.inscripcionCurso(incripcionRQ);
-        assertEquals(expResult, result);
-        fail("The test case is a prototype.");
+       
     }
     
 }
